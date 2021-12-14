@@ -1,1 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-svg.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="header-container-one">
+            <a href="#"><img src="img/svg/logo.svg" alt="" /></a>
+            <a href="#">
+              <svg height="27" width="26">
+                <use xlink:href="img/svg/search.svg#search"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="header-container-two">
+            <div class="header-nav">
+              <button class="header-menu-btn" aria-label="открыть меню">
+                <svg width="32" height="23">
+                  <use xlink:href="img/svg/burger.svg#burger"></use>
+                </svg>
+              </button>
+              <div class="header-menu-open">
+                <h3 class="header-menu-title">menu</h3>
+                <ul class="header-menu-list">
+                  <li class="header-menu-item">
+                    <h4 class="header-menu-list-title" data-tab="#tab_1">
+                      man
+                    </h4>
+                    <ul class="header-submenu" id="tab_1">
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-menu-item">
+                    <h4 class="header-menu-list-title" data-tab="#tab_2">
+                      woman
+                    </h4>
+                    <ul class="header-submenu" id="tab_2">
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-menu-item">
+                    <h4 class="header-menu-list-title" data-tab="#tab_3">
+                      kids
+                    </h4>
+                    <ul class="header-submenu" id="tab_3">
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                      <li class="header-submenu-item">
+                        <a href="#">Accessories</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button>
+              <svg width="29" height="29">
+                <use xlink:href="img/svg/user.svg#user"></use>
+              </svg>
+            </button>
+            <button class="header-basket-btn" aria-label="открыть корзину">
+              <svg width="32" height="29">
+                <use xlink:href="img/svg/basket.svg#basket"></use>
+              </svg>
+            </button>
+            <span class="header-external-meter">0</span>
+            <!-- Корзина -->
+            <div class="header-basket-box">
+              <h3 class="basket-box-title">Корзина пуста</h3>
+              <h3 class="basket-total">Total price:
+                <span class="basket-total-price">0</span>
+              </h3>
+              <!-- <ul class="basket-box-list">
+                <li class="basket-box-item" data-id="01">
+                  <img class="basket-box-img" src="img/catalog-1.jpg" alt="" />
+                  <div class="basket-box-content">
+                    <div class="basket-box-list-title catalog-item-title">
+                      Lorem, ipsum dolor.
+                    </div>
+                    <div class="basket-box-text catalog-item-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Placeat cum expedita cumque tempore repellendus, sit illum
+                      voluptates tenetur fuga at!
+                    </div>
+                    <div class="basket-box-price catalog-item-price">Цена: $ 
+                      <span class="basket-box-price-num">34.00</span>
+                    </div>
+                    <div class="basket-box-counter">
+                      <span class="basket-box-plus" data-action="plus">+</span>
+                      <span class="basket-box-num" data-counter>1</span>
+                      <span class="basket-box-minus" data-action="minus">-</span>
+                    </div>
+                  </div>
+                </li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="catalog-container">
+          <ul class="catalog-list">
+            <li class="catalog-item" data-id="01">
+              <img class="catalog-img" src="img/catalog-1.jpg" alt="" />
+              <div class="catalog-item-content">
+                <h3 class="catalog-item-title">ellery x m'o capsule</h3>
+                <p class="catalog-item-text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="catalog-item-price">$
+                  <span class="catalog-price-num">58.00</span>
+                </span>
+              </div>
+              <button data-cart class="catalog-btn">
+                <svg data-cart width="32" height="29">
+                  <use xlink:href="img/svg/basket.svg#basket"></use>
+                </svg>
+                <span data-cart>Add to Cart</span>
+              </button>
+            </li>
+            <li class="catalog-item" data-id="02">
+              <img class="catalog-img" src="img/catalog-2.jpg" alt="" />
+              <div class="catalog-item-content">
+                <h3 class="catalog-item-title">ellery x m'o capsule</h3>
+                <p class="catalog-item-text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="catalog-item-price">$
+                  <span class="catalog-price-num">86.00</span>
+                </span>
+              </div>
+              <button data-cart class="catalog-btn">
+                <svg data-cart width="32" height="29">
+                  <use xlink:href="img/svg/basket.svg#basket"></use>
+                </svg>
+                <span data-cart>Add to Cart</span>
+              </button>
+            </li>
+            <li class="catalog-item" data-id="03">
+              <img class="catalog-img" src="img/catalog-3.jpg" alt="" />
+              <div class="catalog-item-content">
+                <h3 class="catalog-item-title">ellery x m'o capsule</h3>
+                <p class="catalog-item-text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="catalog-item-price">$
+                  <span class="catalog-price-num">93.00</span>
+                </span>
+              </div>
+              <button data-cart class="catalog-btn">
+                <svg data-cart width="32" height="29">
+                  <use xlink:href="img/svg/basket.svg#basket"></use>
+                </svg>
+                <span data-cart>Add to Cart</span>
+              </button>
+            </li>
+            <li class="catalog-item" data-id="04">
+              <img class="catalog-img" src="img/catalog-4.jpg" alt="" />
+              <div class="catalog-item-content">
+                <h3 class="catalog-item-title">ellery x m'o capsule</h3>
+                <p class="catalog-item-text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="catalog-item-price">$
+                  <span class="catalog-price-num">57.00</span>
+                </span>
+              </div>
+              <button data-cart class="catalog-btn">
+                <svg data-cart width="32" height="29">
+                  <use xlink:href="img/svg/basket.svg#basket"></use>
+                </svg>
+                <span data-cart>Add to Cart</span>
+              </button>
+            </li>
+            <li class="catalog-item" data-id="05">
+              <img class="catalog-img" src="img/catalog-5.jpg" alt="" />
+              <div class="catalog-item-content">
+                <h3 class="catalog-item-title">ellery x m'o capsule</h3>
+                <p class="catalog-item-text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="catalog-item-price">$
+                  <span class="catalog-price-num">92.00</span>
+                </span>
+              </div>
+              <button data-cart class="catalog-btn">
+                <svg data-cart width="32" height="29">
+                  <use xlink:href="img/svg/basket.svg#basket"></use>
+                </svg>
+                <span data-cart>Add to Cart</span>
+              </button>
+            </li>
+            <li class="catalog-item" data-id="06">
+              <img class="catalog-img" src="img/catalog-6.jpg" alt="" />
+              <div class="catalog-item-content">
+                <h3 class="catalog-item-title">ellery x m'o capsule</h3>
+                <p class="catalog-item-text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="catalog-item-price">$
+                  <span class="catalog-price-num">74.00</span>
+                </span>
+              </div>
+              <button data-cart class="catalog-btn">
+                <svg data-cart width="32" height="29">
+                  <use xlink:href="img/svg/basket.svg#basket"></use>
+                </svg>
+                <span data-cart>Add to Cart</span>
+              </button>
+            </li>
+            <li class="catalog-item" data-id="07">
+              <img class="catalog-img" src="img/catalog-7.jpg" alt="" />
+              <div class="catalog-item-content">
+                <h3 class="catalog-item-title">ellery x m'o capsule</h3>
+                <p class="catalog-item-text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="catalog-item-price">$
+                  <span class="catalog-price-num">62.00</span>
+                </span>
+              </div>
+              <button data-cart class="catalog-btn">
+                <svg data-cart width="32" height="29">
+                  <use xlink:href="img/svg/basket.svg#basket"></use>
+                </svg>
+                <span data-cart>Add to Cart</span>
+              </button>
+            </li>
+            <li class="catalog-item" data-id="08">
+              <img class="catalog-img" src="img/catalog-8.jpg" alt="" />
+              <div class="catalog-item-content">
+                <h3 class="catalog-item-title">ellery x m'o capsule</h3>
+                <p class="catalog-item-text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="catalog-item-price">$
+                  <span class="catalog-price-num">85.00</span>
+                </span>
+              </div>
+              <button data-cart class="catalog-btn">
+                <svg data-cart width="32" height="29">
+                  <use xlink:href="img/svg/basket.svg#basket"></use>
+                </svg>
+                <span data-cart>Add to Cart</span>
+              </button>
+            </li>
+            <li class="catalog-item" data-id="09">
+              <img class="catalog-img" src="img/catalog-9.jpg" alt="" />
+              <div class="catalog-item-content">
+                <h3 class="catalog-item-title">ellery x m'o capsule</h3>
+                <p class="catalog-item-text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="catalog-item-price">$
+                  <span class="catalog-price-num">87.00</span>
+                </span>
+              </div>
+              <button data-cart class="catalog-btn">
+                <svg data-cart width="32" height="29">
+                  <use xlink:href="img/svg/basket.svg#basket"></use>
+                </svg>
+                <span data-cart>Add to Cart</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
 
+    <script src="js/calc-price.js"></script> 
+    <script src="js/basket-status.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/basket.js"></script>
+  </body>
+</html>
